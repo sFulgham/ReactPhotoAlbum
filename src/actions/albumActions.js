@@ -8,7 +8,7 @@ export function loadAllAlbumsSuccess(albums) {
 export function loadAllAbums(userId) {
   return function(dispatch) {
     return albumsApi.getAllAlbums.then(albums => {
-      console.log(albums);
+      //console.log(albums);
       dispatch(loadAllAlbumsSuccess(albums));
     }).catch(err => {
       throw(err);
